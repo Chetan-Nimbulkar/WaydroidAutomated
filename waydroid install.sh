@@ -12,7 +12,7 @@ echo "deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $
   sudo tee /etc/apt/sources.list.d/waydroid.list
 
 # Update package list
-sudo apt update
+sudo apt-get update && sudo apt-get dist-upgrade -y
 
 # Install required dependencies
 sudo apt install -y \
